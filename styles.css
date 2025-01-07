@@ -1,0 +1,23 @@
+/* General styles for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    height: 100vh;
+    margin: 0;
+    background-color: #39373a; /* Purple background for better visibility */
+}
+
+/* Styles for the heading */
+h1 {
+    font-size: 60px; /* Increased font size */
+    color: #fff; /* White color for better contrast */
+}
+
+/* Styles for file input */
+input[type="file"] {
+    margin-top: 40px; /* Increased top margin */
+    font-size: 18px; /* Increased font size for better visibility */
+    color: #000; /* Black color for better visibility */
+}

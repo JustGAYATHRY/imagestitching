@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitched Image</title>
+</head>
+<body>
+    <h1>Stitched Image</h1>
+    <img id="stitchedImage" src="" alt="Stitched Image">
+    <script>
+        // Retrieve stitched image from localStorage
+        let stitchedImageDataURL = localStorage.getItem('stitchedImage');
+
+        // Set the src attribute of the image element to display the stitched image
+        document.getElementById('stitchedImage').src = stitchedImageDataURL;
+    </script>
+</body>
+</html>

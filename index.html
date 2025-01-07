@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Stitching</title>
+    <style>
+        /* General styles for the body and html to reset and set base styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #fdfdfd; /* Purple background for the entire page */
+            color: #eeeaf1; /* White text for better contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+
+        /* Container for form elements, centered with a light grey background */
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: #ffffff; /* Slightly lighter grey for contrast */
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(255, 233, 233, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Styles for headings with purple color */
+        h1 {
+            font-size: 2.5em;
+            color: #6ab8ec; /* White color for the heading */
+        }
+
+
+        /* Styles for file input and button, centering and coloring */
+        input[type="file"], button {
+            padding: 10px 20px;
+            margin: 10px auto; /* Centering */
+            display: block; /* Ensures input is a block to fill width */
+            font-size: 16px;
+            color: #fff;
+            background-color: #6ab8ec;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #6ab8ec;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IMAGE STITCHING</h1>
+        <input type="file" id="file1" accept="image/*">
+        <input type="file" id="file2" accept="image/*">
+        <button onclick="uploadImages()">Upload Images</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
