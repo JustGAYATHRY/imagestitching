@@ -1,2 +1,12 @@
 # imagestitching
-An image stitching site using CNN and RANSAC
+Image stitching is the process of combining multiple photographic images with overlapping fields of view to produce a segmented panorama or high-resolution image. Our goal is to create a versatile tool applicable across photography, medical imaging, and satellite mapping, showcasing the potential of combining image stitching with machine learning for superior image synthesis.
+In recent years, advancements in digital imaging technology have facilitated the capture of high-resolution images across various domains, ranging from consumer photography to scientific imaging. However, capturing scenes with a wide field of view often requires multiple images due to physical constraints, such as lens limitations or spatial restrictions. Image stitching, a computational technique, addresses this challenge by seamlessly combining multiple overlapping images into a single panoramic image. The motivation behind this project stems from the increasing demand for panoramic imaging solutions across various applications. Panoramic photography has gained popularity in fields such as tourism, real estate, urban planning, and virtual reality, where immersive visual experiences are highly valued.
+Despite the growing demand for panoramic imaging solutions, the process of manually stitching images together is labor-intensive, time-consuming, and prone to errors. Automating this process through computational methods not only enhances efficiency but also ensures consistency and accuracy in the resulting panoramas
+
+Problem Statement
+
+This project is to develop a software solution capable of automatically stitching together a series of overlapping images into a cohesive panorama. The software should be able to analyze the input images, identify overlapping regions, perform image alignment, and blend the images to create a seamless composite image. Key challenges include handling variations in perspective, exposure, and color balance across the input images while ensuring accurate alignment and blending
+
+Proposed System
+
+In this project, we have proposed a model that addresses the existing issues. The novelty of this system is the combination of CNN architecture and the RANSAC algorithm.  Convolutional neural network is a deep learning model for processing structures like images. And VGG16 is a CNN architecture  used to classify the images. The proposed system takes the split input image from the user and the CNN model VGG16 to classify the images and features are extracted and matched to stitch the two images seamlessly. 
